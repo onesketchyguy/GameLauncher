@@ -7,9 +7,10 @@ namespace GameLauncher
 {
     internal class Launcher
     {
-        public const string GameTitle = "Goblin Inc";
+        public const string GameTitle = "Goblin Inc"; // Change this to match your game!
 
-        public const string DownloadURL = "https://github.com/onesketchyguy/Goblin-Inc/archive/master.zip";
+        public const string DownloadURL = "https://github.com/onesketchyguy/Goblin-Inc/archive/master.zip"; // Use the download link for the latest version of your game!
+        public const string DownloadedFileName = "Goblin-Inc-master"; // The name of the file downling.
 
         public static readonly string GameDataDirectory = $"{Installer.GetAppDirectory()}/{GameTitle}_Data";
 

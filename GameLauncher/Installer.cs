@@ -109,7 +109,7 @@ namespace GameLauncher
                 MainWindow.UpdateProgressBar(65);
 
                 //Move Files
-                MoveNewFoldersIntoPlace();
+                MoveNewFoldersIntoPlace(Launcher.DownloadedFileName);
                 MainWindow.UpdateProgressBar(90);
             }
             else
@@ -228,9 +228,9 @@ namespace GameLauncher
             }
         }
 
-        private static void MoveNewFoldersIntoPlace()
+        private static void MoveNewFoldersIntoPlace(string fileName)
         {
-            string dir = $"{GetAppDirectory()}/Goblin-Inc-master";
+            string dir = $"{GetAppDirectory()}/{fileName}";
 
             CopyDir(dir, GetAppDirectory());
         }

@@ -2,7 +2,7 @@
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <StartAction>Project</StartAction>
-    <StartWorkingDirectory>C:\Users\frres\source\repos\GameLauncher\GameLauncher\bin\Debug\</StartWorkingDirectory>
+    <StartWorkingDirectory>C:\Users\frres\source\repos\Launcher\GameLauncher\GameLauncher\bin\Debug\</StartWorkingDirectory>
   </PropertyGroup>
   <PropertyGroup>
     <PublishUrlHistory>publish\</PublishUrlHistory>

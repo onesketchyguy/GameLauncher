@@ -6,7 +6,7 @@ using System.Windows;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("GameLauncher")]
-[assembly: AssemblyDescription("Goblins Inc game launcher/installer")]
+[assembly: AssemblyDescription("GameLauncher/installer")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Low Bros")]
 [assembly: AssemblyProduct("GameLauncher")]
