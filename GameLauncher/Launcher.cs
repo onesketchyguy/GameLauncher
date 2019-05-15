@@ -9,6 +9,8 @@ namespace GameLauncher
     {
         public const string GameTitle = "Goblin Inc";
 
+        public const string DownloadURL = "https://github.com/onesketchyguy/Goblin-Inc/archive/master.zip";
+
         public static readonly string GameDataDirectory = $"{Installer.GetAppDirectory()}/{GameTitle}_Data";
 
         private static string currentVersion = "0.0.0";

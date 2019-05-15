@@ -70,7 +70,7 @@ namespace GameLauncher
 
             WebClient Client = new WebClient();
 
-            Uri uri = new Uri("https://github.com/onesketchyguy/Goblin-Inc/archive/master.zip");
+            Uri uri = new Uri(Launcher.DownloadURL);
 
             try
             {
