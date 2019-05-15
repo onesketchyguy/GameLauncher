@@ -1,0 +1,40 @@
+﻿<Window x:Class="GameLauncher.LauncherWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameLauncher"
+        mc:Ignorable="d"
+        Title="Launcher" Height="450" Width="800" Visibility="Visible" Icon="images/Worker.png" Foreground="Black" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="White" Offset="0" />
+            <GradientStop Color="Black" Offset="1" />
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Label x:Name="GameTitle" Content="Goblins Inc" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.374,0.458" Height="37" Width="118" FontWeight="Bold" FontSize="20" />
+        <Button x:Name="PlayButton" Content="Launch game" HorizontalAlignment="Left" Margin="600,368,0,0" VerticalAlignment="Top" Width="184" Height="43" Background="White" Click="LaunchGameButton_Click" />
+        <Button x:Name="WebsiteButton" Content="" HorizontalAlignment="Left" Margin="10,363,0,0" VerticalAlignment="Top" Width="57" Height="58" Click="OpenWebsite_Click" BorderBrush="{x:Null}" Foreground="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="images/lowBrosIcon.png" Stretch="UniformToFill" />
+            </Button.Background>
+        </Button>
+        <Button x:Name="UpdateButton" Content="Download Updates" HorizontalAlignment="Left" Margin="411,368,0,0" VerticalAlignment="Top" Width="184" Height="43" Click="UpdateButton_Click" Background="White" />
+        <Image x:Name="Banner" HorizontalAlignment="Left" Height="311" Margin="10,52,0,0" VerticalAlignment="Top" Width="772" Source="images/Capture_0.PNG" Stretch="Fill" />
+        <Image x:Name="file_0" Source="images/Capture_0.PNG" IsEnabled="False" Visibility="Hidden" />
+        <Image x:Name="file_1" Source="images/Capture_1.PNG" IsEnabled="False" Visibility="Hidden" />
+        <Image x:Name="file_2" Source="images/Capture_2.PNG" IsEnabled="False" Visibility="Hidden" />
+        <ProgressBar x:Name="ProgressBar" Value="{Binding Progress}" Maximum="100" Minimum="0" HorizontalAlignment="Left" Height="53" Margin="0,368,0,0" VerticalAlignment="Top" Width="794" Background="{x:Null}" BorderBrush="{x:Null}" />
+        <TextBlock x:Name="ProgressText" Margin="0,387,0,0" TextWrapping="Wrap" Width="794" TextAlignment="Center" Foreground="White" />
+        <TextBlock x:Name="VersionCode" HorizontalAlignment="Left" Margin="128,24,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" />
+        <TextBlock x:Name="ChangeLog" HorizontalAlignment="Left" Margin="10,52,0,0" TextWrapping="Wrap" Text="Testing text" VerticalAlignment="Top" Height="311" Width="772" Foreground="Black">
+            <TextBlock.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#7F000000" Offset="1" />
+                    <GradientStop Color="#7FFFFFFF" />
+                </LinearGradientBrush>
+            </TextBlock.Background>
+        </TextBlock>
+    </Grid>
+</Window>
