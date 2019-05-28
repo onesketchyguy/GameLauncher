@@ -36,6 +36,8 @@ namespace GameLauncher
 
             string version = Launcher.GetVersion();
 
+            GameTitle.Content = Launcher.GameTitle;
+
             if (Installer.GameExists() == false)
             {
                 ShowInstallButton();
